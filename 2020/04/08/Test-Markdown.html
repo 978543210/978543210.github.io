@@ -295,34 +295,7 @@
 <li>在行首输入两个中括号，并在里面写上<code>toc</code>，就会自动生成一个页面目录</li>
 </ul>
 <h4><span id="xiao-guo">效果</span><a href="#xiao-guo" class="header-anchor">#</a></h4><p>[[toc]]</p>
-<div class="toc">
-
-<!-- toc -->
-
-<ul>
-<li><a href="#div-class-tocend-div"></div></a><ul>
-<li><a href="#yu-fa-gao-liang">语法高亮</a></li>
-<li><a href="#jian-dan-biao-ge">简单表格</a></li>
-<li><a href="#checklist">checklist</a></li>
-<li><a href="#gong-shi">公式</a></li>
-<li><a href="#liu-cheng-tu">流程图</a></li>
-<li><a href="#shi-xu-tu">时序图</a></li>
-<li><a href="#zhuang-tai-tu">状态图</a></li>
-<li><a href="#uml-tu">UML图</a></li>
-<li><a href="#bing-tu">饼图</a></li>
-<li><a href="#gan-te-tu">甘特图</a></li>
-</ul>
-</li>
-<li><a href="#zhu-shi">注释</a><ul>
-<li><a href="#jiao-zhu">脚注</a></li>
-</ul>
-</li>
-</ul>
-<!-- tocstop -->
-
-<div class="tocEnd"></div>
-----
-
+<hr>
 <h3><span id="yu-fa-gao-liang">语法高亮</span><a href="#yu-fa-gao-liang" class="header-anchor">#</a></h3><h4><span id="shuo-ming">说明</span><a href="#shuo-ming" class="header-anchor">#</a></h4><ul>
 <li>在```后面指明语法名</li>
 <li>加强的代码块，支持四十一种编程语言的语法高亮的显示</li>
@@ -388,11 +361,12 @@
 </ul>
 <h4><span id="xiao-guo">效果</span><a href="#xiao-guo" class="header-anchor">#</a></h4><p>小明老婆让小明下班时买一斤包子，如果遇到卖西瓜的，买一个。</p>
 <p>左右结构</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">    A[公司] --&gt;| 下 班 | B(菜市场)</span><br><span class="line">    B --&gt; C&#123;看见&lt;br&gt;卖西瓜的&#125;</span><br><span class="line">    C --&gt;|Yes| D[买一个包子]</span><br><span class="line">    C --&gt;|No| E[买一斤包子]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph LR;</span><br><span class="line">    A[公司] --&gt;| 下 班 | B(菜市场);</span><br><span class="line">    B --&gt; C&#123;看见&lt;br&gt;卖西瓜的&#125;;</span><br><span class="line">    C --&gt;|Yes| D[买一个包子];</span><br><span class="line">    C --&gt;|No| E[买一斤包子];</span><br></pre></td></tr></table></figure>
 
 <p>上下结构</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph TD</span><br><span class="line">    A[公司] --&gt;| 下 班 | B(菜市场)</span><br><span class="line">    B --&gt; C&#123;看见&lt;br&gt;卖西瓜的&#125;</span><br><span class="line">    C --&gt;|Yes| D[买一个包子]</span><br><span class="line">    C --&gt;|No| E[买一斤包子]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph TD;</span><br><span class="line">    A[公司] --&gt;| 下 班 | B(菜市场);</span><br><span class="line">    B --&gt; C&#123;看见&lt;br&gt;卖西瓜的&#125;;</span><br><span class="line">    C --&gt;|Yes| D[买一个包子];</span><br><span class="line">    C --&gt;|No| E[买一斤包子];</span><br></pre></td></tr></table></figure>
 
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph TD;</span><br><span class="line">    A--&gt;B;</span><br><span class="line">    A--&gt;C;</span><br><span class="line">    B--&gt;D;</span><br><span class="line">    C--&gt;D;</span><br></pre></td></tr></table></figure>
 <hr>
 <h3><span id="shi-xu-tu">时序图</span><a href="#shi-xu-tu" class="header-anchor">#</a></h3><h4><span id="shuo-ming">说明</span><a href="#shuo-ming" class="header-anchor">#</a></h4><ul>
 <li>访问<a href="https://mermaid-js.github.io/mermaid/#/sequenceDiagram" target="_blank" rel="noopener">Mermaid 时序图</a>参考具体使用方法</li>
