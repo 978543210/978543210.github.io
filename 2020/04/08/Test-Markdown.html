@@ -401,40 +401,39 @@ end</pre>
 <li>访问<a href="https://mermaid-js.github.io/mermaid/#/stateDiagram">Mermaid 状态图</a>参考具体使用方法</li>
 </ul>
 <h4><span id="效果">效果</span></h4><pre class="mermaid">stateDiagram
-[*] --> A
-A --> B
-A --> C
-state A {
-    [*] --> D
-    D --> [*]
-}
-B --> [*]
-C --> [*]</pre>
+state fork_state <<fork>>
+  [*] --> fork_state
+  fork_state --> State2
+  fork_state --> State3
+
+  state join_state <<join>>
+  State2 --> join_state
+  State3 --> join_state
+  join_state --> State4
+  State4 --> [*]</join></fork></pre>
 
 <hr>
 <h3><span id="uml图">UML图</span></h3><h4><span id="说明">说明</span></h4><ul>
 <li>访问<a href="https://mermaid-js.github.io/mermaid/#/classDiagram">Mermaid UML图</a>参考具体使用方法</li>
 </ul>
 <h4><span id="效果">效果</span></h4><pre class="mermaid">classDiagram
-Base <|-- one base <|-- two : +string name base: +getname() +setname(string name) class one{ newname +getnewname() } two{ -int id -getid() }< pre>
+  Animal <|-- duck animal <|-- fish zebra : +int age +string gender animal: +ismammal() +mate() class duck{ beakcolor +swim() +quack() } fish{ -int sizeinfeet -caneat() zebra{ +bool is_wild +run() }< pre>
 
 <hr>
 <h3><span id="饼图">饼图</span></h3><h4><span id="说明">说明</span></h4><ul>
 <li>访问<a href="https://mermaid-js.github.io/mermaid/#/pie">Mermaid 饼图</a>参考具体使用方法</li>
 </ul>
-<h4><span id="效果">效果</span></h4><pre class="mermaid">pie
-title 饼图
-"A" : 40
-"B" : 30
-"C" : 20
-"D" : 10</pre>
+<h4><span id="效果">效果</span></h4><pre class="mermaid">pie title Pets adopted by volunteers
+  "Dogs" : 386
+  "Cats" : 85
+  "Rats" : 15</pre>
 
 <hr>
 <h3><span id="甘特图">甘特图</span></h3><h4><span id="说明">说明</span></h4><ul>
 <li>访问<a href="https://mermaid-js.github.io/mermaid/#/gantt">Mermaid 甘特图</a>参考具体使用方法</li>
 </ul>
 <h4><span id="效果甘特图红线解释">效果</span></h4><pre class="mermaid">gantt
-     title 敏捷研发流程
+    title 敏捷研发流程
     section 迭代前
         交互设计     :a1, 2018-10-18, 4d
         UI设计        :after a1, 5d
