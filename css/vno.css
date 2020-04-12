@@ -6830,6 +6830,7 @@ input[type="tel"]:-ms-input-placeholder {
   .content-wrapper__inner {
     margin-right: 0;
     margin-left: 0;
+    max-width: 850px;
   }
   .navigation__item {
     width: 100%;
