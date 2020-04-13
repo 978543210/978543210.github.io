@@ -420,16 +420,13 @@ mjx-container + br {
 <script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script><link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"><script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
 		<script>
-		var gitalkConfig = {"clientID":"742f83930a206c3bf7c9","clientSecret":"4132e0d2a2ca68089419a9d1b130551bd18746ea","repo":"comments4blog","owner":978543210,"admin":"['978543210']","ID":"location.pathname","labels":"['Gitalk']","perPage":15,"pagerDirection":"last","createIssueManually":false,"distractionFreeMode":false};
+		var gitalkConfig = {"clientID":"742f83930a206c3bf7c9","clientSecret":"4132e0d2a2ca68089419a9d1b130551bd18746ea","repo":"comments4blog","owner":978543210,"admin":[978543210],"ID":"location.pathname","labels":"['Gitalk']","perPage":15,"pagerDirection":"last","createIssueManually":false,"distractionFreeMode":false};
 	    gitalkConfig.id = md5(location.pathname);
 		var gitalk = new Gitalk(gitalkConfig);
 	    gitalk.render("gitalk-container");
 	    </script>
   </section>
-
-</article>
-
-<section class="read-more">
+  <section class="read-more">
      
         
 
@@ -456,6 +453,9 @@ Markdown 的目标是实现“易读易写”， 不过最需要强调的便是�
         
    
 </section>
+
+</article>
+
 
             
             <footer class="footer">
