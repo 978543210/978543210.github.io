@@ -11,16 +11,10 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
     <meta name="description" content="个人记录、学习、分享的一片自留地">
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Markdown语法及样式测试 | 978!6">
-    <meta name="twitter:description" content="个人记录、学习、分享的一片自留地">
-
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Markdown语法及样式测试 | 978!6">
-    <meta property="og:description" content="个人记录、学习、分享的一片自留地">
+    
+        <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
 
     
     <meta name="author" content="978!6">
@@ -31,14 +25,13 @@
     
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 
-
     
     <link rel="icon" href="/images/favicon.png">
     
-
     
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+        
     
     <meta name="generator" content="hexo"/>
     
@@ -191,8 +184,8 @@ Markdown 的语法有个主要的目的：用来作为一种网络内容的<em>�
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">这是 *斜体*，这是 **粗体**，这是  ++下划线++  ，这是 ~~删除线~~ 。</span><br><span class="line"></span><br><span class="line">*[HTML]: Hyper Text Markup Language</span><br><span class="line">*[W3C]:  World Wide Web Consortium</span><br><span class="line"></span><br><span class="line">The HTML specification</span><br><span class="line">is maintained by the W3C.</span><br></pre></td></tr></table></figure>
 <h4><span id="效果"> 效果</span></h4>
 <p>这是 <em>斜体</em>，这是 <strong>粗体</strong>，这是 <ins>下划线</ins> ，这是 <s>删除线</s> 。H<sub>2</sub>0,x<sup>2</sup></p>
-<h2><span id="the-html-specificationis-maintained-by-the-w3c"> The <abbr title="Hyper Text Markup Language">HTML</abbr> specification<br>
-is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.</span></h2>
+<p>The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.</p>
+<hr>
 <h3><span id="标题设置"> 标题设置</span></h3>
 <h4><span id="说明"> 说明</span></h4>
 <ul>
@@ -365,11 +358,6 @@ is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.</span><
 <li><a href="#%E6%95%88%E6%9E%9C">效果</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#the-html-specificationis-maintained-by-the-w3c">The HTML specification<br>
-is maintained by the W3C.</a>
-<ul>
 <li><a href="#%E6%A0%87%E9%A2%98%E8%AE%BE%E7%BD%AE">标题设置</a>
 <ul>
 <li><a href="#%E8%AF%B4%E6%98%8E-2">说明</a></li>
@@ -815,29 +803,21 @@ end</pre>
 </ol>
 </section>
 
-<div id="gitalk-container"></div>
-<script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script><link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"><script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-		<script>
-		var gitalkConfig = {"clientID":"742f83930a206c3bf7c9","clientSecret":"4132e0d2a2ca68089419a9d1b130551bd18746ea","repo":"comments4blog","owner":"978543210","admin":["978543210"],"ID":"location.pathname","labels":"['Gitalk']","perPage":15,"pagerDirection":"last","createIssueManually":false,"distractionFreeMode":false};
-	    gitalkConfig.id = md5(location.pathname);
-		var gitalk = new Gitalk(gitalkConfig);
-	    gitalk.render("gitalk-container");
-	    </script>
-    <section class="read-more">
+  </section>
+  <section class="read-more">
      
         
             <div class="read-more-item">
                 <span class="read-more-item-dim">最近的文章</span>
-                <h2 class="post-list__post-title post-title"><a href="/2020/04/14/hello-world.html" title="Hello World">Hello World</a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/2020/04/19/hello-world.html" title="Hello World">Hello World</a></h2>
                 <p class="excerpt">
                 
                 Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
                 &hellip;
                 </p>
-                <div class="post-list__meta"><time datetime="2020-04-14T06:40:59.637Z" class="post-list__meta--date date">2020-04-14</time>
+                <div class="post-list__meta"><time datetime="2020-04-19T14:23:39.693Z" class="post-list__meta--date date">2020-04-19</time>
  &#8226; <span class="post-list__meta--tags tags">于&nbsp;
-</span><a class="btn-border-small" href="/2020/04/14/hello-world.html">继续阅读</a></div>
+</span><a class="btn-border-small" href="/2020/04/19/hello-world.html">继续阅读</a></div>
 
             </div>
         
@@ -846,8 +826,31 @@ end</pre>
    
 </section>
 
+  
+  <div id="gitalk-container"></div>
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script type="text/javascript">
+  var gCID = '/2020/04/08/Test-Markdown.html';
+  var gitalkConfig = { 
+    clientID: '742f83930a206c3bf7c9',
+    clientSecret: '4132e0d2a2ca68089419a9d1b130551bd18746ea',
+    repo: 'comments4blog',
+    owner: '978543210',
+    admin: ['978543210'],
+    labels: ['Gitalk'],
+    perPage: 15,
+    pagerDirection: 'last',
+    createIssueManually: false,
+    distractionFreeMode: false
+   };
+   gitalkConfig.id=md5(gCID);
+   var gitalk = new Gitalk(gitalkConfig);
+   gitalk.render('gitalk-container');
+  </script>
 
-  </section>
+
+
+
 </article>
 
 
@@ -860,7 +863,7 @@ end</pre>
     </span>
     <span class="footer__copyright">
         &copy; 2020 - 本站由 <a href="/">978!6</a> 创建,
-        使用<a href="https://github.com/skx926/hexo-theme-vno">hexo-theme-vno</a>主题
+        使用<a href="https://github.com/978543210/hexo-theme-vno">hexo-theme-vno</a>主题
     </span>
 </footer>
 
@@ -869,8 +872,6 @@ end</pre>
     </div>
 
     
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
     
 <script src="/js/main.js"></script>
 
